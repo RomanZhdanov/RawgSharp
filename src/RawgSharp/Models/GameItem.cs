@@ -14,7 +14,7 @@ namespace RawgSharp.Models
         public string Name { get; set; }
 
         [JsonPropertyName("released")]
-        public DateTime Released { get; set; }
+        public DateTime? Released { get; set; }
 
         [JsonPropertyName("tba")]
         public bool TBA { get; set; }
@@ -53,7 +53,7 @@ namespace RawgSharp.Models
         public int SuggestionsCount { get; set; }
 
         [JsonPropertyName("updated")]
-        public DateTime Updated { get; set; }
+        public DateTime? Updated { get; set; }
 
         [JsonPropertyName("esrb_rating")]
         public EsrbRating EsrbRating { get; set; }

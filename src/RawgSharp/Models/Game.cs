@@ -26,13 +26,13 @@ namespace RawgSharp.Models
         public IEnumerable<GamePlatformMetacritic> MetacriticPlatforms { get; set; }
 
         [JsonPropertyName("released")]
-        public DateTime Released { get; set; }
+        public DateTime? Released { get; set; }
 
         [JsonPropertyName("tba")]
         public bool TBA { get; set; }
 
         [JsonPropertyName("updated")]
-        public DateTime Updated { get; set; }
+        public DateTime? Updated { get; set; }
 
         [JsonPropertyName("background_image")]
         public string BackgroundImage { get; set; }
