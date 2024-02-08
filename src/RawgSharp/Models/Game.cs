@@ -16,11 +16,17 @@ namespace RawgSharp.Models
         [JsonPropertyName("name_original")]
         public string NameOriginal { get; set; }
 
+        [JsonPropertyName("alternative_names")]
+        public string[] AlternativeNames { get; set; }
+
         [JsonPropertyName("description")]
         public string Description { get; set; }
 
         [JsonPropertyName("metacritic")]
         public double? Metacritic { get; set; }
+
+        [JsonPropertyName("metacritic_url")]
+        public string MetacriticUrl { get; set; }
 
         [JsonPropertyName("metacritic_platforms")]
         public IEnumerable<GamePlatformMetacritic> MetacriticPlatforms { get; set; }
