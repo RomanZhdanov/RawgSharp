@@ -59,6 +59,6 @@ namespace RawgSharp.Models
         public EsrbRating EsrbRating { get; set; }
 
         [JsonPropertyName("platforms")]
-        public object[] Platforms { get; set; }
+        public IEnumerable<GamePlatform> Platforms { get; set; }
     }
 }
